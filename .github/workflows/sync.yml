@@ -14,7 +14,7 @@ jobs:
       - name: Get list of apps to fetch from Fleet
         id: load_config
         run: |
-          echo "files=$(cat sync-config.yml | grep -oP '(?<=- ).*')" >> $GITHUB_ENV
+          echo "files=$(cat lib/software/fleet-maintained/sync-config.yml | grep -oP '(?<=- ).*')" >> $GITHUB_ENV
 
       - name: Sync apps
         run: |
