@@ -1,4 +1,4 @@
-url: placeholder
+url: placeholder test 1
 install_script: |
   #!/bin/sh
   
