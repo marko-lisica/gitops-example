@@ -1,4 +1,4 @@
-lib/software/fleet-maintained/test-fma-with-gh.sh
+lib/software/fleet-maintained/fma-update.sh
 lib/.DS_Store
 lib/software/.DS_Store
 .DS_Store
