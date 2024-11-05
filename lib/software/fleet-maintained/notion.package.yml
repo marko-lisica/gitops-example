@@ -1,0 +1,6 @@
+url: "https://example.com/dl/package/install-22.0.0.pkg"
+version: 3.18.0
+install_script:
+  path: ../../scripts/notion-install.sh
+uninstall_script:
+  path: ../../scripts/notion-uninstall.sh
