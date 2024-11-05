@@ -1,0 +1,6 @@
+url: "https://example.com/dl/package/install-22.0.0.pkg"
+version: 132.0.1
+install_script:
+  path: ../../scripts/mozilla-firefox-install.sh
+uninstall_script:
+  path: ../../scripts/mozilla-firefox-uninstall.sh
