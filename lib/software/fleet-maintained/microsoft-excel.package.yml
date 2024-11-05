@@ -1,0 +1,6 @@
+url: "https://example.com/dl/package/install-22.0.0.pkg"
+version: 16.90.24101387
+install_script:
+  path: ../../scripts/microsoft-excel-install.sh
+uninstall_script:
+  path: ../../scripts/microsoft-excel-uninstall.sh

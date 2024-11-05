@@ -1,0 +1,6 @@
+url: "https://example.com/dl/package/install-22.0.0.pkg"
+version: 2.24.21.84
+install_script:
+  path: ../../scripts/whatsapp-install.sh
+uninstall_script:
+  path: ../../scripts/whatsapp-uninstall.sh
