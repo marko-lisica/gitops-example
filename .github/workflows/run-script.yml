@@ -11,5 +11,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Change permissions for script
+      run: chmod +x ./script.sh 
+
     - name: Run shell script
       run: ./script.sh
