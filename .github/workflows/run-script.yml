@@ -15,6 +15,6 @@ jobs:
 
     - name: Run shell script
       env:
-        MARKO_TEST_SECRET = ${{ secrets.TEST_SECRET_TWO }}
-        MARKO_TEST_VAR = ${{ vars.RUNNER_SECRET_TEST }}
+        MARKO_TEST_SECRET: ${{ secrets.TEST_SECRET_TWO }}
+        MARKO_TEST_VAR: ${{ vars.RUNNER_SECRET_TEST }}
       run: ./script.sh
