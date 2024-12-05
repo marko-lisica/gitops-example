@@ -17,4 +17,5 @@ jobs:
       env:
         MARKO_TEST_SECRET: ${{ secrets.TEST_SECRET_TWO }}
         MARKO_TEST_VAR: ${{ vars.RUNNER_SECRET_TEST }}
+        MARKO_VAR: ${{ vars.MARKO_TEST_VAR }}
       run: ./script.sh
