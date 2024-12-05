@@ -6,7 +6,6 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -15,4 +14,7 @@ jobs:
       run: chmod +x ./script.sh 
 
     - name: Run shell script
+      env:
+        MARKO_TEST_SECRET = ${{ secrets.TEST_SECRET_TWO }}
+        MARKO_TEST_VAR = ${{ vars.RUNNER_SECRET_TEST }}
       run: ./script.sh
