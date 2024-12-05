@@ -1,0 +1,20 @@
+name: Run PowerShell Script
+
+on:
+  workflow_dispatch:  # This allows the workflow to be triggered manually
+
+jobs:
+  run-script:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run PowerShell script
+      env:
+        MARKO_TEST_SECRET: ${{ secrets.TEST_SECRET_TWO }}
+        MARKO_TEST_VAR: ${{ vars.RUNNER_SECRET_TEST }}
+        MARKO_VAR: ${{ vars.MARKO_TEST_VAR }}
+      run: |
+        Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+        ./script.ps1
